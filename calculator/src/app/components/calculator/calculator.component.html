@@ -1,0 +1,78 @@
+<div class="calculator-container">
+  <div class="display">
+    <ion-text class="result">{{ currentNumber }}</ion-text>
+  </div>
+  
+  <div class="buttons">
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <ion-button expand="block" color="medium" (click)="clear()">C</ion-button>
+        </ion-col>
+        <ion-col>
+          <ion-button expand="block" color="medium" (click)="getOperation('%')">%</ion-button>
+        </ion-col>
+        <ion-col>
+          <ion-button expand="block" color="medium" (click)="getOperation('/')">/</ion-button>
+        </ion-col>
+        <ion-col>
+          <ion-button expand="block" color="medium" (click)="getOperation('*')">×</ion-button>
+        </ion-col>
+      </ion-row>
+      
+      <ion-row>
+        <ion-col>
+          <ion-button expand="block" (click)="getNumber('7')">7</ion-button>
+        </ion-col>
+        <ion-col>
+          <ion-button expand="block" (click)="getNumber('8')">8</ion-button>
+        </ion-col>
+        <ion-col>
+          <ion-button expand="block" (click)="getNumber('9')">9</ion-button>
+        </ion-col>
+        <ion-col>
+          <ion-button expand="block" color="medium" (click)="getOperation('-')">-</ion-button>
+        </ion-col>
+      </ion-row>
+      
+      <ion-row>
+        <ion-col>
+          <ion-button expand="block" (click)="getNumber('4')">4</ion-button>
+        </ion-col>
+        <ion-col>
+          <ion-button expand="block" (click)="getNumber('5')">5</ion-button>
+        </ion-col>
+        <ion-col>
+          <ion-button expand="block" (click)="getNumber('6')">6</ion-button>
+        </ion-col>
+        <ion-col>
+          <ion-button expand="block" color="medium" (click)="getOperation('+')">+</ion-button>
+        </ion-col>
+      </ion-row>
+      
+      <ion-row>
+        <ion-col>
+          <ion-button expand="block" (click)="getNumber('1')">1</ion-button>
+        </ion-col>
+        <ion-col>
+          <ion-button expand="block" (click)="getNumber('2')">2</ion-button>
+        </ion-col>
+        <ion-col>
+          <ion-button expand="block" (click)="getNumber('3')">3</ion-button>
+        </ion-col>
+        <ion-col>
+          <ion-button expand="block" color="primary" (click)="getOperation('=')">=</ion-button>
+        </ion-col>
+      </ion-row>
+      
+      <ion-row>
+        <ion-col size="9">
+          <ion-button expand="block" (click)="getNumber('0')">0</ion-button>
+        </ion-col>
+        <ion-col size="3">
+          <ion-button expand="block" (click)="getDecimal()">.</ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+</div>

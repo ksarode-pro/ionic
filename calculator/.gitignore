@@ -22,9 +22,9 @@ yarn-error.log
 *.launch
 .settings/
 *.sublime-workspace
-.vscode/*
 
 # Visual Studio Code
+.vscode/
 .vscode/*
 !.vscode/settings.json
 !.vscode/tasks.json
@@ -68,6 +68,17 @@ Thumbs.db
 
 # Optional: package-lock.json (uncomment if you want to ignore it)
 # package-lock.json
+
+# Test files
+/karma.conf.js
+/tsconfig.spec.json
+/testem.log
+/coverage/
+
+# Configuration files that can be regenerated
+/.browserslistrc
+/.editorconfig
+/.eslintrc.json
 
 *~
 *.sw[mnpcod]

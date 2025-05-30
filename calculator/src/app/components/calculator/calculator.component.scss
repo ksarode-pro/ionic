@@ -1,0 +1,40 @@
+.calculator-container {
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  background: var(--ion-color-light);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.display {
+  background: var(--ion-color-dark);
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  text-align: right;
+  
+  .result {
+    color: var(--ion-color-light);
+    font-size: 2em;
+    font-weight: bold;
+    margin: 0;
+  }
+}
+
+.buttons {
+  ion-button {
+    margin: 2px;
+    --border-radius: 5px;
+    height: 50px;
+    font-size: 1.2em;
+  }
+}
+
+ion-grid {
+  padding: 0;
+}
+
+ion-row {
+  margin-bottom: 5px;
+}
